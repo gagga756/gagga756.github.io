@@ -1,0 +1,153 @@
+<html>
+
+    <head>
+
+        <title>Tasse Basse</title>
+
+        <link href="posizioni.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    </head>
+
+    <body>
+        
+        <font face="Century Gothic">
+
+            <div class="svg">
+         
+                <img class="animate__animated animate__fadeindown" src="swiss.svg", align="left", width="60px", height="45px">
+     
+            </div>
+
+            <div class="htitolo">
+
+                 <h1  class="animate__animated animate__fadeindown" align="left"> Svizzera, tasse</h1>
+
+            </div>
+
+        </a> <br><br><br><br>
+
+           
+
+           <p>
+            Gli individui con stipendio medio, pagano in svizzera dal <b>20%</b> al <b>40%</b> di tasse. Questo<br>
+            proporzionalmente allo stipendio stesso.
+           </p> 
+           
+           <p>
+            Ad esempio su uno stipendio di <b>80 000 euro </b> solo il <b>25% sono di tasse</b>
+           </p>
+
+            <div class="graph">
+                <img src="swiss graph.jpg", width="300px", height="200px%">
+            </div>
+
+           <div class="titograph">
+                <h4 color="red">Pressione fiscale Europa</h4>
+            </div>
+
+            <p>
+                I motivi di questa pressione fiscale Svizzera molto bassa rispetto a quella
+                italiana sono
+            </p>
+
+            <br>
+
+            <ul>
+                <li><b>Sistema fiscale diversificato:</b> La Svizzera ha un sistema fiscale diversificato, composto<br> 
+                    da imposte federali, cantonali e comunali e ciò permette ai cantoni di competere tra loro<br>
+                    per attrarre imprese e individui offrendo aliquote fiscali competitive.</li>
+        <br>
+                <li><b>neutralità fiscale:</b> Il sistema fiscale svizzero è progettato per essere neutrale, <br>
+                    il che significa che cerca di evitare di distorcere le decisioni economiche degli individui 
+                    e delle imprese attraverso l'imposizione fiscale. Ciò contribuisce a mantenere aliquote fiscali relativamente basse.</li>
+        <br>
+                <li><b>Attraente per le imprese:</b> La Svizzera è nota per essere un <u>luogo favorevole alle imprese,</u> con aliquote fiscali competitive 
+                    per le società. <br> Questo ha attirato numerose società multinazionali a stabilire la propria sede o filiali nel paese.
+                    In questo modo, l'affluenza di tasse è sempre <br> aumentata permettendo l'abbassamento della pressione fiscale</li>
+                
+            </ul>
+
+            <div class="google"><img src="google.jpeg"></div>
+
+            <ul>
+                <li><b>Elevata efficienza nella raccolta delle tasse:</b> Il sistema fiscale svizzero è noto per la sua <u>efficienza nella raccolta delle tasse.</u>
+                    Ciò riduce i costi <br> amministrativi associati alla riscossione delle imposte, consentendo di mantenere le aliquote fiscali relativamente
+                    basse.</li>
+        <br>
+                <li><b>Ricchezza e prosperità economica:</b> La <u>Svizzera ha una delle economie più forti al mondo,</u> con un elevato reddito <br>pro capite e un elevato livello 
+                    di prosperità. Questo fornisce una base fiscale solida che consente al governo di finanziare i suoi servizi pubblici <br> con aliquote fiscali relativamente basse.</li>
+        <br>
+                <li><b>Tradizione di fiscalità moderata:</b> Storicamente, la Svizzera ha mantenuto una <u>politica fiscale relativamente moderata,</u> evitando eccessi di tassazione <br> che potrebbero
+                     scoraggiare gli investimenti e l'attività economica.</li>
+            </ul>
+
+            <br><br>
+
+            <div>
+                Calcolatore automatico, di tassazione sullo stipendio di massimo 80000 franchi.
+                Funziona grazie a valori medi, le quote di tassazione cantonali possono variare in base al Cantone.
+            </div>
+                   
+            <br>
+              
+              
+                
+                <table id="tabella", border="1px", width="50%", height="5%", align="center">
+                        <tr>
+
+                            <td align="center">Stipendio Netto (€) </td>
+
+                            <td align="center">Tassa Cantone (€) </td>
+
+                            <td align="center">Imposta Federale (€) </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td align="center"><input type="number" id="inputStipendio" oninput="calcolaTassa()" /></td>
+
+                            <td align="center"><span id="valoreTassaCantone"></span></td>
+
+                            <td align="center"><span id="valoreTassaFederale"></span></td>
+
+                        </tr>
+
+                    </table>
+
+                    <br><br><br><br><br>
+                
+                  
+                <script>
+
+                        function calcolaTassa() {
+                            
+                            var stipendio = parseFloat(document.getElementById("inputStipendio").value);
+                
+                          
+                            var tassaCantone = stipendio * 0.1460;
+                
+                            
+                            document.getElementById("valoreTassaCantone").textContent = tassaCantone.toFixed(2); 
+
+
+                            var tassaCantone = stipendio * 0.01785;
+
+
+                            document.getElementById("valoreTassaFederale").textContent = tassaCantone.toFixed(2);
+
+
+                        }
+                </script>
+                
+               
+            
+
+   
+
+    </body>
+</html>

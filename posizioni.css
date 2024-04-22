@@ -1,0 +1,37 @@
+.graph{
+    position: absolute;
+    right:90px;
+    top:50px;
+}
+
+.titograph{
+    position: absolute;
+    right: 180px;
+    top: 20px;
+    color: crimson;
+
+}
+
+.google{
+    position: absolute;
+    right: 20px;
+    top: 400px;
+}
+
+.a2{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.svg{
+    position:absolute;
+    top:20px;
+    left:10px;
+}
+    
+.htitolo{
+position:absolute;
+top:0px;
+left:65px;
+        
+}
